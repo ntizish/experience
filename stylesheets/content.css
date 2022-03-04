@@ -1,0 +1,63 @@
+.opening {
+  position: relative;
+  display: none;
+}
+
+.openingGrid {
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  z-index: 1;
+}
+
+.openingCity {
+  width: 100%;
+  position: absolute;
+  margin-top: 25%;
+  z-index: 3;
+}
+
+.sun {
+  width: 32vw;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 50%;
+  z-index: 2;
+}
+
+.sunImg {
+  width: 32vw;
+  position: absolute;
+}
+
+.house {
+  width: 13.5vw;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 7%;
+  z-index: 2;
+}
+.houseImg {
+  width: 13.5vw;
+  position: absolute;
+}
+
+.startButton {
+  width: 15vw;
+  position: absolute;
+  margin-top: 10.5%;
+  margin-left: 16.5%;
+}
+
+.startImg {
+  width: 15vw;
+}
+
+.opening {
+  position: relative;
+}
+
+.background2 {
+  width: 100%;
+  position: absolute;
+}
