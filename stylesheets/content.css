@@ -60,4 +60,65 @@
 .background2 {
   width: 100%;
   position: absolute;
+  z-index: 1;
+}
+
+.desk {
+  width: 35vw;
+  position: absolute;
+  margin-top: 27%;
+  margin-left: 15%;
+  z-index: 3;
+}
+
+.deskImg {
+  width: 35vw;
+}
+
+.receptionLady {
+  width: 10vw;
+  position: absolute;
+  margin-top: 22%;
+  margin-left: 36%;
+  z-index: 2;
+}
+
+.receptionLadyImg {
+  width: 10vw;
+}
+
+.box1 {
+  width: 8vw;
+  position: absolute;
+  margin-top: 29%;
+  margin-left: 58%;
+  z-index: 2;
+}
+
+.box1Img {
+  width: 8vw;
+}
+
+.octopus {
+  width: 10vw;
+  position: absolute;
+  margin-top: 22%;
+  margin-left: 57%;
+  z-index: 3;
+}
+
+.octopusImg {
+  width: 10vw;
+}
+
+.door {
+  width: 13vw;
+  position: absolute;
+  margin-top: 11.2%;
+  margin-left: 78.7%;
+  z-index: 3;
+}
+
+.doorImg {
+  width: 13vw;
 }
