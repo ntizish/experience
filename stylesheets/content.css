@@ -122,3 +122,109 @@
 .doorImg {
   width: 13vw;
 }
+
+.yellowFrame {
+  width: 12vw;
+  position: absolute;
+  margin-top: 6%;
+  margin-left: 4%;
+  z-index: 3;
+}
+
+.yellowFrameImg {
+  width: 12vw;
+}
+
+.purpleFrame {
+  width: 13vw;
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 27%;
+  z-index: 3;
+}
+
+.purpleFrameImg {
+  width: 13vw;
+}
+
+.reception {
+  display: none;
+}
+
+.background3 {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.night {
+  width: 23vw;
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 11%;
+  z-index: 2;
+}
+
+.nightImg {
+  width: 23vw;
+}
+
+.day {
+  width: 23vw;
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 11%;
+  z-index: 3;
+}
+
+.dayImg {
+  width: 23vw;
+}
+
+.chamelion {
+  width: 7vw;
+  position: absolute;
+  margin-top: 38%;
+  margin-left: -4%;
+  z-index: 3;
+}
+
+.chamelionImg {
+  width: 7vw;
+}
+
+.solarium {
+  width: 19vw;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 72%;
+  z-index: 3;
+}
+
+.solariumImg {
+  width: 19vw;
+}
+
+.box2 {
+  width: 9vw;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 56%;
+  z-index: 2;
+}
+
+.box2Img {
+  width: 9vw;
+}
+
+.boxDoor {
+  width: 4.7vw;
+  position: absolute;
+  margin-top: 33.5%;
+  margin-left: 57.5%;
+  z-index: 3;
+}
+
+.boxDoorImg {
+  width: 4.7vw;
+}
