@@ -1,0 +1,11 @@
+@keyframes sunJump {
+  0% {margin-top: 43%}
+  25% {margin-top: 37%}
+  75% {margin-top: 37%}
+  100% {margin-top: 43%}
+}
+
+@keyframes chamel {
+  0% {margin-left: -4%}
+  100% {margin-left: 200%}
+}

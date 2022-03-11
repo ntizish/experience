@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .opening {
   position: relative;
   display: none;
@@ -194,13 +198,8 @@
   margin-top: 38%;
   margin-left: -4%;
   transform: scaleX(-1);
-  animation: chamel 3s linear;
+  animation: chamel 3s ease-in;
   animation-play-state: paused;
-}
-
-@keyframes chamel {
-  0% {margin-left: -4%;}
-  100% {margin-left: 200%}
 }
 
 .solarium {
@@ -263,18 +262,37 @@
   width: 8vw;
 }
 
-.sunEyes {
-  width: 100vw;
+#sunEyes {
   position: absolute;
+  margin-top: 43%;
+  margin-left: 12%;
   z-index: 2;
+  animation: sunJump 3s ease-out infinite;
+  animation-play-state: paused;
 }
 
-.sunEyesImg {
-  width: 10vw;
+#sunEyesImg {
+  width: 9vw;
   position: absolute;
-  margin-top: 42%;
-  margin-left: 11%;
 }
+
+#sunEyesText {
+  width: 100vw;
+  position: absolute;
+  z-index: 3;
+}
+
+#sunEyesTextImg {
+  width: 35vw;
+  position: absolute;
+  z-index: 3;
+  margin-top: 44%;
+  margin-left: 32%;
+  display: none;
+  animation: sunEyesText 2s ease-in;
+  animation-play-state: paused;
+}
+
 
 .bulbImg {
   width: 10vw;
