@@ -148,6 +148,7 @@
 }
 
 .reception {
+  position: relative;
   display: none;
 }
 
@@ -210,7 +211,7 @@
   position: absolute;
   margin-top: 30%;
   margin-left: 56%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .box2Img {
@@ -227,4 +228,85 @@
 
 .boxDoorImg {
   width: 4.7vw;
+}
+
+.mac {
+  width: 16vw;
+  position: absolute;
+  margin-top: 21%;
+  margin-left: 57%;
+  z-index: 2;
+}
+
+.macImg {
+  width: 16vw;
+}
+
+.bulb {
+  width: 8vw;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 50%;
+  z-index: 2;
+}
+
+.bulbImg {
+  width: 8vw;
+}
+
+.sunEyes {
+  width: 10vw;
+  position: absolute;
+  margin-top: 34%;
+  margin-left: 11%;
+  z-index: 2;
+}
+
+.bulbImg {
+  width: 10vw;
+}
+
+.object {
+  width: 11vw;
+  position: absolute;
+  margin-top: 50.5%;
+  margin-left: 10.5%;
+  z-index: 3;
+}
+
+.objectImg {
+  width: 11vw;
+}
+
+.tanningRoom {
+  display: none;
+  position: relative;
+}
+
+.interfaceSect {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.background4 {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.interfaceMac {
+  width: 56vw;
+  position: relative;
+  margin-top: -54%;
+  margin-left: 50%;
+  overflow: hidden;
+  padding-right: -10%;
+  z-index: 2;
+}
+
+.interfaceMacImg {
+  overflow: hidden;
+  padding-right: -10%;
+  width: 56vw;
 }
