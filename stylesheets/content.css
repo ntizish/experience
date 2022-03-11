@@ -159,39 +159,48 @@
 }
 
 .night {
-  width: 23vw;
+  width: 100vw;
   position: absolute;
-  margin-top: 8%;
-  margin-left: 11%;
   z-index: 2;
 }
 
-.nightImg {
+#nightImg {
   width: 23vw;
+  margin-top: 8%;
+  margin-left: 11%;
 }
 
 .day {
-  width: 23vw;
+  width: 100vw;
   position: absolute;
+  z-index: 3;
+}
+
+#dayImg {
+  width: 23vw;
   margin-top: 8%;
   margin-left: 11%;
-  z-index: 3;
 }
 
-.dayImg {
-  width: 23vw;
-}
-
-.chamelion {
-  width: 7vw;
+#chamelion {
+  width: 100vw;
   position: absolute;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#chamelionImg {
+  width: 7vw;
   margin-top: 38%;
   margin-left: -4%;
-  z-index: 3;
+  transform: scaleX(-1);
+  animation: chamel 3s linear;
+  animation-play-state: paused;
 }
 
-.chamelionImg {
-  width: 7vw;
+@keyframes chamel {
+  0% {margin-left: -4%;}
+  100% {margin-left: 200%}
 }
 
 .solarium {
@@ -255,11 +264,16 @@
 }
 
 .sunEyes {
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+}
+
+.sunEyesImg {
   width: 10vw;
   position: absolute;
-  margin-top: 34%;
+  margin-top: 42%;
   margin-left: 11%;
-  z-index: 2;
 }
 
 .bulbImg {
@@ -279,12 +293,14 @@
 }
 
 .tanningRoom {
-  display: none;
   position: relative;
+  /* overflow: hidden;
+  width: 100vw; */
 }
 
 .interfaceSect {
   position: relative;
+  display: none;
   overflow: hidden;
   width: 100vw;
 }
