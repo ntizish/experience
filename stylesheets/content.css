@@ -214,7 +214,7 @@ body {
   width: 19vw;
 }
 
-.box2 {
+#box2 {
   width: 9vw;
   position: absolute;
   margin-top: 30%;
@@ -222,19 +222,33 @@ body {
   z-index: 1;
 }
 
-.box2Img {
+#box2Img {
   width: 9vw;
 }
 
-.boxDoor {
+#boxOpened {
+  width: 6.8vw;
+  position: absolute;
+  margin-top: 31.5%;
+  margin-left: 55.5%;
+  z-index: 3;
+  display: none;
+}
+
+#boxOpenedImg {
+  width: 6.8vw;
+}
+
+#boxDoor {
   width: 4.7vw;
   position: absolute;
   margin-top: 33.5%;
   margin-left: 57.5%;
   z-index: 3;
+  display: flex;
 }
 
-.boxDoorImg {
+#boxDoorImg {
   width: 4.7vw;
 }
 

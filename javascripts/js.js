@@ -35,3 +35,17 @@ $(document).ready(function(){
     $("#sunEyesTextImg").css("display", "none");
   })
 })
+
+$(document).ready(function(){
+  $("#boxDoorImg").click(function(){
+    $("#boxDoor").css("display", "none");
+    $("#boxOpened").css("display", "flex");
+  })
+})
+
+$(document).ready(function(){
+  $("#boxOpenedImg").click(function(){
+    $("#boxOpened").css("display", "none");
+    $("#boxDoor").css("display", "flex");
+  })
+})
