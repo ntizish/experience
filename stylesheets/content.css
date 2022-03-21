@@ -4,7 +4,7 @@ body {
 
 .opening {
   position: relative;
-  display: none;
+  display: flex;
 }
 
 .openingGrid {
@@ -21,7 +21,7 @@ body {
   z-index: 3;
 }
 
-.sun {
+#sun {
   width: 32vw;
   position: absolute;
   margin-top: 10%;
@@ -29,9 +29,12 @@ body {
   z-index: 2;
 }
 
-.sunImg {
+#sunImg {
   width: 32vw;
   position: absolute;
+  animation: sun 2s linear infinite;
+  animation-play-state: paused;
+  transform-origin: center center;
 }
 
 .house {
@@ -103,15 +106,17 @@ body {
   width: 8vw;
 }
 
-.octopus {
+#octopus {
   width: 10vw;
   position: absolute;
   margin-top: 22%;
   margin-left: 57%;
   z-index: 3;
+  animation: octopus 1.2s ease-in;
+  animation-play-state: paused;
 }
 
-.octopusImg {
+#octopusImg {
   width: 10vw;
 }
 
@@ -127,32 +132,37 @@ body {
   width: 13vw;
 }
 
-.yellowFrame {
+#yellowFrame {
   width: 12vw;
   position: absolute;
   margin-top: 6%;
   margin-left: 4%;
   z-index: 3;
+  animation: yellowF 2s ease-in infinite;
+  animation-play-state: paused;
 }
 
-.yellowFrameImg {
+#yellowFrameImg {
   width: 12vw;
 }
 
-.purpleFrame {
+#purpleFrame {
   width: 13vw;
   position: absolute;
   margin-top: 7%;
   margin-left: 27%;
+  animation: purpleF 2s ease-in infinite;
+  animation-play-state: paused;
   z-index: 3;
 }
 
-.purpleFrameImg {
+#purpleFrameImg {
   width: 13vw;
 }
 
 .reception {
   position: relative;
+  width: 100vw;
   display: none;
 }
 
@@ -300,9 +310,26 @@ body {
   width: 35vw;
   position: absolute;
   z-index: 3;
-  margin-top: 44%;
-  margin-left: 32%;
+  margin-top: 43%;
+  margin-left: 51%;
   display: none;
+  animation: sunEyesText 2s ease-in;
+  animation-play-state: paused;
+}
+
+#solariumText {
+  width: 100vw;
+  position: absolute;
+  z-index: 3;
+}
+
+#solariumTextImg {
+  width: 35vw;
+  position: absolute;
+  z-index: 3;
+  margin-top: 35%;
+  margin-left: 19%;
+  display: flex;
   animation: sunEyesText 2s ease-in;
   animation-play-state: paused;
 }
@@ -321,7 +348,7 @@ body {
 
 .tanningRoom {
   position: relative;
-  display: flex;
+  display: none;
   /* overflow: hidden;
   width: 100vw; */
 }

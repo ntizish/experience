@@ -7,6 +7,8 @@ $(document).ready(function(){
   });
 });
 
+var z = 3;
+
 $(document).ready(function(){
   $("#dayImg").click(function(){
     $("#dayImg").css("display", "none");
@@ -23,6 +25,8 @@ $(document).ready(function(){
   $("#sunEyes").click(function(){
     $("#sunEyes").css("animation-play-state", "running");
     $("#sunEyesTextImg").css("display", "flex");
+    z += 1;
+    $("#sunEyesText").css("z-index", z);
     setTimeout(function() {
       $("#sunEyes").css("animation-play-state", "paused");
     }, 3000);
@@ -51,6 +55,12 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
+  $("#solariumTextImg").click(function(){
+    $("#solariumTextImg").css("display", "none");
+  })
+})
+
+$(document).ready(function(){
   $("#bulbImg").click(function(){
     $(".tanningRoom").css("display", "none");
     $(".nightRoom").css("display", "flex");
@@ -58,5 +68,41 @@ $(document).ready(function(){
       $(".tanningRoom").css("display", "flex");
       $(".nightRoom").css("display", "none");
     }, 4000);
+  })
+})
+
+$(document).ready(function(){
+  $("#yellowFrameImg").click(function(){
+    $("#yellowFrame").css("animation-play-state", "running");
+    setTimeout(function() {
+      $("#yellowFrame").css("animation-play-state", "paused");
+    }, 2000);
+  })
+})
+
+$(document).ready(function(){
+  $("#purpleFrameImg").click(function(){
+    $("#purpleFrame").css("animation-play-state", "running");
+    setTimeout(function() {
+      $("#purpleFrame").css("animation-play-state", "paused");
+    }, 2000);
+  })
+})
+
+$(document).ready(function(){
+  $("#octopusImg").click(function(){
+    $("#octopus").css("animation-play-state", "running");
+    setTimeout(function() {
+      $("#octopus").css("animation-play-state", "paused");
+    }, 1100);
+  })
+})
+
+$(document).ready(function(){
+  $("#sunImg").click(function(){
+    $("#sunImg").css("animation-play-state", "running");
+    setTimeout(function() {
+      $("#sunImg").css("animation-play-state", "paused");
+    }, 2000);
   })
 })

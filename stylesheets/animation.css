@@ -9,3 +9,35 @@
   0% {margin-left: -4%}
   100% {margin-left: 200%}
 }
+
+@keyframes yellowF {
+  0% {margin-top: 6%}
+  25% {margin-top: 20%}
+  75% {margin-top: 20%}
+  100% {margin-top: 6%}
+}
+
+@keyframes purpleF {
+  0% {margin-left: 27%}
+  25% {margin-left: 40%}
+  75% {margin-left: 40%}
+  100% {margin-left: 27%}
+}
+
+@keyframes octopus {
+  0% {margin-top: 22%}
+  35% {margin-top: 25%}
+  100% {margin-top: -15%}
+}
+
+@keyframes sun {
+  0% {
+    transform: rotate(0deg);
+    }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
