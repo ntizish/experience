@@ -49,3 +49,17 @@ $(document).ready(function(){
     $("#boxDoor").css("display", "flex");
   })
 })
+
+$(document).ready(function(){
+  $("#solariumImg").click(function(){
+    $(".tanningRoom").css("display", "none");
+    $(".nightRoom").css("display", "flex");
+  })
+})
+
+$(document).ready(function(){
+  $("#nightSolariumImg").click(function(){
+    $(".nightRoom").css("display", "none");
+    $(".tanningRoom").css("display", "flex");
+  })
+})
