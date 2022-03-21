@@ -51,15 +51,12 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
-  $("#solariumImg").click(function(){
+  $("#bulbImg").click(function(){
     $(".tanningRoom").css("display", "none");
     $(".nightRoom").css("display", "flex");
-  })
-})
-
-$(document).ready(function(){
-  $("#nightSolariumImg").click(function(){
-    $(".nightRoom").css("display", "none");
-    $(".tanningRoom").css("display", "flex");
+    setTimeout(function() {
+      $(".tanningRoom").css("display", "flex");
+      $(".nightRoom").css("display", "none");
+    }, 4000);
   })
 })

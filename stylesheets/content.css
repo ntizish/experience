@@ -264,15 +264,15 @@ body {
   width: 16vw;
 }
 
-.bulb {
+#bulb {
   width: 8vw;
   position: absolute;
   margin-top: 0;
   margin-left: 50%;
-  z-index: 2;
+  z-index: 3;
 }
 
-.bulbImg {
+#bulbImg {
   width: 8vw;
 }
 
