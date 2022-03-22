@@ -41,3 +41,9 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes houseJump {
+  0% {margin-top: 35%}
+  50% {margin-top: 33%}
+  100% {margin-top: 35%}
+}

@@ -32,19 +32,22 @@ body {
 #sunImg {
   width: 32vw;
   position: absolute;
-  animation: sun 2s linear infinite;
+  animation: sun 1.5s linear infinite;
   animation-play-state: paused;
   transform-origin: center center;
 }
 
-.house {
+#house {
   width: 13.5vw;
   position: absolute;
-  margin-top: 30%;
+  margin-top: 35%;
   margin-left: 7%;
   z-index: 2;
+  animation: houseJump 1s ease-in infinite;
+  animation-play-state: running;
 }
-.houseImg {
+
+#houseImg {
   width: 13.5vw;
   position: absolute;
 }

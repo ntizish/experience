@@ -103,6 +103,12 @@ $(document).ready(function(){
     $("#sunImg").css("animation-play-state", "running");
     setTimeout(function() {
       $("#sunImg").css("animation-play-state", "paused");
-    }, 2000);
+    }, 1500);
+  })
+})
+
+$(document).ready(function(){
+  $("#startImg").click(function(){
+    $("#house").css("animation-play-state", "running");
   })
 })
