@@ -2,9 +2,11 @@ body {
   overflow: hidden;
 }
 
-.opening {
+#opening {
   position: relative;
-  display: flex;
+  display: none;
+  animation: opening 500ms;
+  animation-play-state: paused;
 }
 
 .openingGrid {
@@ -44,7 +46,7 @@ body {
   margin-left: 7%;
   z-index: 2;
   animation: houseJump 1s ease-in infinite;
-  animation-play-state: running;
+  animation-play-state: paused;
 }
 
 #houseImg {
@@ -52,19 +54,31 @@ body {
   position: absolute;
 }
 
-.startButton {
+#houseButton {
+  width: 13.5vw;
+  position: absolute;
+  margin-top: 35%;
+  margin-left: 7%;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#houseFakeImg {
+  width: 13.5vw;
+  position: absolute;
+}
+
+
+#startButton {
   width: 15vw;
   position: absolute;
   margin-top: 10.5%;
   margin-left: 16.5%;
+  z-index: 4;
 }
 
-.startImg {
+#startImg {
   width: 15vw;
-}
-
-.opening {
-  position: relative;
 }
 
 .background2 {
@@ -123,7 +137,7 @@ body {
   width: 10vw;
 }
 
-.door {
+#door {
   width: 13vw;
   position: absolute;
   margin-top: 11.2%;
@@ -131,7 +145,7 @@ body {
   z-index: 3;
 }
 
-.doorImg {
+#doorImg {
   width: 13vw;
 }
 
@@ -163,10 +177,12 @@ body {
   width: 13vw;
 }
 
-.reception {
-  position: relative;
+#reception {
+  position: fixed;
   width: 100vw;
   display: none;
+  animation: reception 500ms;
+  animation-play-state: paused;
 }
 
 .background3 {
@@ -357,8 +373,8 @@ body {
 }
 
 .interfaceSect {
-  position: relative;
-  display: none;
+  position: fixed;
+  display: flex;
   overflow: hidden;
   width: 100vw;
 }
@@ -370,7 +386,7 @@ body {
 }
 
 .nightRoom {
-  position: relative;
+  position: fixed;
   display: none;
   overflow: hidden;
   width: 100vw;
@@ -422,10 +438,10 @@ body {
 }
 
 .interfaceMac {
-  width: 56vw;
-  position: relative;
-  margin-top: -54%;
-  margin-left: 50%;
+  width: 48vw;
+  position: absolute;
+  margin-top: 11%;
+  margin-left: 53%;
   overflow: hidden;
   padding-right: -10%;
   z-index: 2;
@@ -434,5 +450,60 @@ body {
 .interfaceMacImg {
   overflow: hidden;
   padding-right: -10%;
-  width: 56vw;
+  width: 48vw;
+}
+
+#triangles {
+  width: 17.5vw;
+  margin-top: 26%;
+  margin-left: 62.5%;
+  position: absolute;
+  z-index: 4;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#redT {
+  width: 2.6vw;
+  margin-left: 2%;
+  margin-right: 2%;
+  animation: triangular 2s ease-in infinite;
+  animation-play-state: paused;
+  transform: scale(1);
+}
+
+#purpleT {
+  width: 2.6vw;
+  margin-left: 2%;
+  margin-right: 2%;
+  animation: triangular 2s ease-in infinite;
+  animation-play-state: paused;
+  transform: scale(1);
+}
+
+#yellowT {
+  width: 2.6vw;
+  margin-left: 2%;
+  margin-right: 2%;
+  animation: triangular 2s ease-in infinite;
+  animation-play-state: paused;
+  transform: scale(1);
+}
+
+#greenT {
+  width: 2.6vw;
+  margin-left: 2%;
+  margin-right: 2%;
+  animation: triangular 2s ease-in infinite;
+  animation-play-state: paused;
+  transform: scale(1);
+}
+
+#brownT {
+  width: 2.6vw;
+  margin-left: 2%;
+  margin-right: 2%;
+  animation: triangular 1.5s ease-in-out infinite;
+  animation-play-state: paused;
+  transform: scale(1);
 }
