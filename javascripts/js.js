@@ -123,6 +123,31 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $("#workerText").click(function(){
+    $("#starttext").css("display", "none");
+    $("#starttext2").css("display", "flex");
+    setTimeout(function() {
+      var x = 0;
+      var txt = 'Советую Вам обращать внимание на детали интерьера! Поверьте, здесь есть на что посмотреть.';
+      var speed = 70;
+      $(document).ready(function firststring() {
+      $(document).ready(function typeWriter() {
+        if (x < txt.length) {
+          document.getElementById("starttext2").innerHTML += txt.charAt(x);
+          x++;
+          setTimeout(typeWriter, speed);
+        }
+      });
+      });
+      $(".receptionLady").css("animation-play-state", "running");
+    }, 500);
+    setTimeout(function() {
+      $(".receptionLady").css("animation-play-state", "paused");
+    }, 8000);
+  });
+});
+
+$(document).ready(function(){
   $("#startButton").click(function(){
     // $("#house").css("animation-play-state", "paused");
     $("#opening").css("animation-play-state", "running");

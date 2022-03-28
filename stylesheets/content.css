@@ -642,3 +642,24 @@ body {
   z-index: 2;
   width: 32vw;
 }
+
+#workerText2 {
+  width: 37vw;
+  position: absolute;
+  margin-left: 54%;
+  margin-top: 44%;
+  display: none;
+  align-items: center;
+  z-index: 5;
+}
+
+#starttext2 {
+  position: absolute;
+  text-align: left;
+  margin-left: 8%;
+  margin-top: 6%;
+  color: black;
+  font-size: 1.4vw;
+  z-index: 2;
+  width: 32vw;
+}
