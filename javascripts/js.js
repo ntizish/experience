@@ -1,6 +1,9 @@
 $(document).ready(function(){
-  $("#chamelionImg").click(function(){
+  $("#chamelion").click(function(){
+    z += 1;
+    $("#chamelionText").css("z-index", z);
     $("#chamelionImg").css("animation-play-state", "running");
+    $("#chamelionText").css("display", "flex");
     setTimeout(function() {
       $("#chamelionImg").css("animation-play-state", "paused");
     }, 2000);
@@ -42,6 +45,9 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#boxDoorImg").click(function(){
+    z += 1;
+    $("#octopusText").css("z-index", z);
+    $("#octopusText").css("display", "flex");
     $("#boxDoor").css("display", "none");
     $("#boxOpened").css("display", "flex");
   });
@@ -122,7 +128,24 @@ $(document).ready(function(){
     $("#opening").css("animation-play-state", "running");
     setTimeout(function() {
       $("#opening").css("display", "none");
+      var i = 0;
+      var txt = 'Рады приветствовать вас в Радуге! Здесь вы сможете подобрать себе новый уникальный цвет кожи...  ';
+      var speed = 70;
+      $(document).ready(function firststring() {
+      $(document).ready(function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("starttext").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      });
+      });
+      $(".receptionLady").css("animation-play-state", "running");
     }, 500);
+    setTimeout(function() {
+      $(".receptionLady").css("animation-play-state", "paused");
+    }, 8000);
+
     $("#reception").css("animation-play-state", "running");
     $("#reception").css("display", "block");
   });
@@ -137,18 +160,18 @@ $(document).ready(function(){
   });
 });
 
-// $(document).ready(function(){
-//   $("#door").click(function(){
-//     $("#reception").css("animation-play-state", "running");
-//     setTimeout(function() {
-//       $("#opening").css("display", "none");
-//     }, 500);
-//     $("#reception").css("animation-play-state", "running");
-//     $("#reception").css("display", "block");
-//   });
-// });
-
-var str = "scale(" + 1 + ")"
+$(document).ready(function(){
+  $("#door").click(function(){
+    $("#reception").css("animation-play-state", "paused");
+    $("#reception").css("animation", "sectionGo 500ms");
+    $("#reception").css("animation-play-state", "running");
+    setTimeout(function() {
+      $("#reception").css("display", "none");
+    }, 500);
+    $(".tanningRoom").css("animation-play-state", "running");
+    $(".tanningRoom").css("display", "block");
+  });
+});
 
 $(document).ready(function(){
   $("#brownT").click(function(){
@@ -236,6 +259,18 @@ $(document).ready(function(){
     $("#refreshImg").css("animation-play-state", "running");
     setTimeout(function() {
       window.location.reload();
-    }, 1500);
+    }, 1300);
+  });
+});
+
+$(document).ready(function(){
+  $("#octopusTextImg").click(function(){
+    $("#octopusText").css("display", "none");
+  });
+});
+
+$(document).ready(function(){
+  $("#chamelionTextImg").click(function(){
+    $("#chamelionText").css("display", "none");
   });
 });

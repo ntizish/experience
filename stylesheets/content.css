@@ -1,11 +1,12 @@
 body {
   overflow: hidden;
+  font-family: "HalvarBreit-RgSlanted";
 }
 
 #opening {
   position: relative;
-  display: none;
-  animation: opening 500ms;
+  display: block;
+  animation: sectionGo 500ms;
   animation-play-state: paused;
 }
 
@@ -105,6 +106,8 @@ body {
   margin-top: 22%;
   margin-left: 36%;
   z-index: 2;
+  animation: ladySpeak 0.5s linear infinite;
+  animation-play-state: paused;
 }
 
 .receptionLadyImg {
@@ -181,7 +184,7 @@ body {
   position: fixed;
   width: 100vw;
   display: none;
-  animation: reception 500ms;
+  animation: sectionCome 500ms;
   animation-play-state: paused;
 }
 
@@ -248,7 +251,7 @@ body {
   position: absolute;
   margin-top: 30%;
   margin-left: 56%;
-  z-index: 1;
+  z-index: 2;
 }
 
 #box2Img {
@@ -366,10 +369,11 @@ body {
 }
 
 .tanningRoom {
-  position: relative;
+  /* position: relative; */
   display: none;
-  /* overflow: hidden;
-  width: 100vw; */
+  overflow: hidden;
+  width: 100vw;
+  animation: sectionCome 500ms;
 }
 
 .interfaceSect {
@@ -534,7 +538,7 @@ body {
 
 .endOfGame {
   /* position: fixed; */
-  display: flex;
+  display: none;
   overflow: hidden;
   width: 100vw;
 }
@@ -585,4 +589,56 @@ body {
   width: 8.8vw;
   animation: refresh 1s linear;
   animation-play-state: paused;
+}
+
+#octopusText {
+  width: 35vw;
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 46%;
+  z-index: 4;
+  display: none;
+}
+
+#octopusTextImg {
+  width: 35vw;
+}
+
+#chamelionText {
+  width: 35vw;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 30%;
+  z-index: 4;
+  display: none;
+}
+
+#chamelionText {
+  width: 35vw;
+}
+
+#workerText {
+  width: 37vw;
+  position: absolute;
+  margin-left: 54%;
+  margin-top: 44%;
+  align-items: center;
+  z-index: 5;
+}
+
+#workerTextImg {
+  width: 37vw;
+  position: absolute;
+  z-index: 1;
+}
+
+#starttext {
+  position: absolute;
+  text-align: left;
+  margin-left: 9%;
+  margin-top: 5%;
+  color: black;
+  font-size: 1.4vw;
+  z-index: 2;
+  width: 32vw;
 }
