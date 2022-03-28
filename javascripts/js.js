@@ -224,3 +224,18 @@ $(document).ready(function(){
     $("#redT").css("animation", "none");
   });
 });
+
+$(document).ready(function(){
+  $("#endTextImg").click(function(){
+    $("#endText").css("display", "none");
+  });
+});
+
+$(document).ready(function(){
+  $("#refreshImg").click(function(){
+    $("#refreshImg").css("animation-play-state", "running");
+    setTimeout(function() {
+      window.location.reload();
+    }, 1500);
+  });
+});
