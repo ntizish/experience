@@ -10,7 +10,7 @@ $(document).ready(function(){
   });
 });
 
-var z = 3;
+var z = 7;
 
 $(document).ready(function(){
   $("#dayImg").click(function(){
@@ -160,6 +160,7 @@ $(document).ready(function(){
   $("#startButton").click(function(){
     // $("#house").css("animation-play-state", "paused");
     $("#opening").css("animation-play-state", "running");
+    $(".wallTriangular").css("animation-play-state", "running");
     setTimeout(function() {
       $("#opening").css("display", "none");
       var i = 0;
@@ -206,8 +207,11 @@ $(document).ready(function(){
   });
 });
 
+var chosenT = " ";
+
 $(document).ready(function(){
   $("#brownT").click(function(){
+    chosenT = "brown";
     $("#brownT").css("animation", "triangular 2s ease-in infinite");
     $("#brownT").css("animation-play-state", "running");
     $("#redT").css("animation-play-state", "paused");
@@ -223,6 +227,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#redT").click(function(){
+    chosenT = "red";
     $("#redT").css("animation-play-state", "running");
     $("#redT").css("animation", "triangular 2s ease-in infinite");
     $("#greenT").css("animation-play-state", "paused");
@@ -238,6 +243,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#yellowT").click(function(){
+    chosenT = "yellow";
     $("#yellowT").css("animation-play-state", "running");
     $("#yellowT").css("animation", "triangular 2s ease-in infinite");
     $("#brown").css("animation-play-state", "paused");
@@ -253,6 +259,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#purpleT").click(function(){
+    chosenT = "purple";
     $("#purpleT").css("animation-play-state", "running");
     $("#purpleT").css("animation", "triangular 2s ease-in infinite");
     $("#brownT").css("animation-play-state", "paused");
@@ -268,6 +275,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#greenT").click(function(){
+    chosenT = "green";
     $("#greenT").css("animation-play-state", "running");
     $("#greenT").css("animation", "triangular 2s ease-in infinite");
     $("#purpleT").css("animation-play-state", "paused");
@@ -320,5 +328,41 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#openingTextImg").click(function(){
     $("#openingText").css("display", "none");
+  });
+});
+// going to interface sect
+$(document).ready(function(){
+  $("#macImg").click(function(){
+    $("#tanningRoom").css("animation", "sectionGo 500ms");
+    $("#tanningRoom").css("animation-play-state", "running");
+    setTimeout(function() {
+      $("#reception").css("display", "none");
+    }, 500);
+    $("#interfaceSect").css("animation-play-state", "running");
+    $("#interfaceSect").css("display", "flex");
+  });
+});
+
+function tanning() {
+  $("#chamelion").css("display", "none");
+  $("#chamelion").css("display", "none");
+  $(".nightRoom").css("opacity", "0");
+  $("#interfaceSect").css("animation", "interfaceGo 500ms");
+  $("#tanningRoom").css("animation", "tanningRoomBack 500ms");
+  $("#interfaceSect").css("animation-play-state", "running");
+  $("#tanningRoom").css("animation-play-state", "running");
+  setTimeout(function() {
+    $("#interfaceSect").css("animation-play-state", "paused");
+      $("#interfaceSect").css("display", "none");
+  }, 500);
+}
+
+$(document).ready(function(){
+  $("#tanButtonImg").click(function(){
+    if (chosenT == " ") {
+      alert("Вам нужно выбрать желаемый цвет загара!")
+    } else {
+      tanning();
+    }
   });
 });

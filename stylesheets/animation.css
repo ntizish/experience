@@ -57,6 +57,16 @@
   0% {left: 100%; top: 0%;}
   100% {left: 0%; top: 0%;}
 }
+/* tanning room must return */
+@keyframes tanningRoomBack {
+  0% {left: -100%; top: 0%;}
+  100% {left: 0%; top: 0%;}
+}
+/* interface came and should go back */
+@keyframes interfaceGo {
+  0% {left: 0%; top: 0%;}
+  100% {left: 100%; top: 0%;}
+}
 
 @keyframes triangular {
   0% {transform: scale(1);}
