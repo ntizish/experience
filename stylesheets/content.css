@@ -43,7 +43,7 @@ body {
 #house {
   width: 13.5vw;
   position: absolute;
-  margin-top: 35%;
+  margin-top: 32%;
   margin-left: 7%;
   z-index: 2;
   animation: houseJump 1s ease-out infinite;
@@ -94,7 +94,7 @@ body {
   position: absolute;
   margin-top: 27%;
   margin-left: 15%;
-  z-index: 3;
+  z-index: 4;
 }
 
 .deskImg {
@@ -106,7 +106,7 @@ body {
   position: absolute;
   margin-top: 22%;
   margin-left: 36%;
-  z-index: 2;
+  z-index: 3;
   animation: ladySpeak 0.5s linear infinite;
   animation-play-state: paused;
 }
@@ -369,11 +369,12 @@ body {
   width: 11vw;
 }
 
-.tanningRoom {
-  /* position: relative; */
+#tanningRoom {
+  position: fixed;
   display: none;
   overflow: hidden;
   width: 100vw;
+  height: 100vh;
   animation: sectionCome 500ms;
 }
 
@@ -675,4 +676,54 @@ body {
 
 #openingTextImg {
   width: 41vw;
+}
+
+.wallTriangular {
+  width: 7.8vw;
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  transform-origin: center;
+  animation-play-state: paused;
+}
+
+.purple1 {
+  margin-left: 50.1%;
+  margin-top: 6.6%;
+  animation: trianglesWall 4s linear infinite;
+}
+
+.purple2 {
+  margin-left: 66.8%;
+  margin-top: 14.9%;
+  animation: trianglesWall 2.5s linear infinite;
+}
+
+.red1 {
+  margin-left: 50.1%;
+  margin-top: 14.9%;
+  animation: trianglesWall 2.9s linear infinite;
+}
+
+.red2 {
+  margin-left: 16.8%;
+  margin-top: -1.75%;
+  animation: trianglesWall 1.5s linear infinite;
+}
+
+.green {
+  margin-left: 25.1%;
+  margin-top: 19%;
+  animation: trianglesWall 3.2s linear infinite;
+}
+
+.yellow {
+  margin-left: 8.4%;
+  margin-top: 27.35%;
+  animation: trianglesWall 4.2s linear infinite;
+}
+
+.wallTriangular:hover {
+  animation-play-state: paused;
 }

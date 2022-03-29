@@ -68,10 +68,10 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#bulbImg").click(function(){
-    $(".tanningRoom").css("display", "none");
+    $("#tanningRoom").css("display", "none");
     $(".nightRoom").css("display", "flex");
     setTimeout(function() {
-      $(".tanningRoom").css("display", "flex");
+      $("#tanningRoom").css("display", "flex");
       $(".nightRoom").css("display", "none");
     }, 4000);
   });
@@ -122,29 +122,38 @@ $(document).ready(function(){
   });
 });
 
+var spoken = false;
 $(document).ready(function(){
   $("#workerText").click(function(){
-    $("#starttext").css("display", "none");
-    $("#starttext2").css("display", "flex");
-    setTimeout(function() {
-      var x = 0;
-      var txt = 'Советую Вам обращать внимание на детали интерьера! Поверьте, здесь есть на что посмотреть.';
-      var speed = 70;
-      $(document).ready(function firststring() {
-      $(document).ready(function typeWriter() {
-        if (x < txt.length) {
-          document.getElementById("starttext2").innerHTML += txt.charAt(x);
-          x++;
-          setTimeout(typeWriter, speed);
-        }
-      });
-      });
-      $(".receptionLady").css("animation-play-state", "running");
-    }, 500);
-    setTimeout(function() {
+    if (!spoken) {
+      $("#starttext").css("display", "none");
+      $("#starttext2").css("display", "flex");
+      spoken = true;
+      setTimeout(function() {
+        var x = 0;
+        var txt = 'Советую Вам обращать внимание на детали интерьера! Поверьте, здесь есть на что посмотреть.';
+        var speed = 70;
+        $(document).ready(function firststring() {
+        $(document).ready(function typeWriter() {
+          if (x < txt.length) {
+            document.getElementById("starttext2").innerHTML += txt.charAt(x);
+            x++;
+            setTimeout(typeWriter, speed);
+          }
+        });
+        });
+        $(".receptionLady").css("animation-play-state", "running");
+      }, 500);
+      setTimeout(function() {
+        $(".receptionLady").css("animation-play-state", "paused");
+      }, 8000);
+  } else {
+    $("#workerText").click(function(){
       $(".receptionLady").css("animation-play-state", "paused");
-    }, 8000);
-  });
+      $("#workerText").css("display", "none");
+    });
+    }
+});
 });
 
 $(document).ready(function(){
@@ -187,14 +196,13 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#door").click(function(){
-    $("#reception").css("animation-play-state", "paused");
     $("#reception").css("animation", "sectionGo 500ms");
     $("#reception").css("animation-play-state", "running");
     setTimeout(function() {
       $("#reception").css("display", "none");
     }, 500);
-    $(".tanningRoom").css("animation-play-state", "running");
-    $(".tanningRoom").css("display", "block");
+    $("#tanningRoom").css("animation-play-state", "running");
+    $("#tanningRoom").css("display", "block");
   });
 });
 

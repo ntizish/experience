@@ -43,9 +43,9 @@
 }
 
 @keyframes houseJump {
-  0% {margin-top: 35%}
-  50% {margin-top: 33%}
-  100% {margin-top: 35%}
+  0% {margin-top: 32%}
+  50% {margin-top: 30%}
+  100% {margin-top: 32%}
 }
 
 @keyframes sectionGo {
@@ -100,4 +100,11 @@
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+@keyframes trianglesWall {
+  0% {transform: scale(1) scaleX(-1); }
+  50% {transform: scale(0) scaleX(-1);}
+  100% {transform: scale(1) scaleX(-1);}
 }
