@@ -4,9 +4,3 @@ src: url("../fonts/HalvarBreit-RgSlanted.ttf") format("truetype");
 font-style: normal;
 font-weight: normal;
 }
-
-body {
-  background: black;
-  font-family: "HalvarBreit-RgSlanted";
-  overflow: hidden;
-}

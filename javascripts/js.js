@@ -299,3 +299,18 @@ $(document).ready(function(){
     $("#chamelionText").css("display", "none");
   });
 });
+
+$(document).ready(function(){
+  $("#houseButton").click(function(){
+    $("#house").css("animation-play-state", "running");
+    setTimeout(function() {
+      $("#house").css("animation-play-state", "paused");
+    }, 5000);
+  });
+});
+
+$(document).ready(function(){
+  $("#openingTextImg").click(function(){
+    $("#openingText").css("display", "none");
+  });
+});

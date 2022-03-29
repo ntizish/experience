@@ -46,7 +46,7 @@ body {
   margin-top: 35%;
   margin-left: 7%;
   z-index: 2;
-  animation: houseJump 1s ease-in infinite;
+  animation: houseJump 1s ease-out infinite;
   animation-play-state: paused;
 }
 
@@ -57,11 +57,12 @@ body {
 
 #houseButton {
   width: 13.5vw;
+  height: 13.5vw;
   position: absolute;
-  margin-top: 35%;
+  margin-top: 33%;
   margin-left: 7%;
   z-index: 4;
-  visibility: hidden;
+  opacity: 0;
 }
 
 #houseFakeImg {
@@ -657,9 +658,21 @@ body {
   position: absolute;
   text-align: left;
   margin-left: 8%;
-  margin-top: 6%;
+  margin-top: 8%;
   color: black;
   font-size: 1.4vw;
   z-index: 2;
   width: 32vw;
+}
+
+#openingText {
+  width: 41vw;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 40%;
+  z-index: 3;
+}
+
+#openingTextImg {
+  width: 41vw;
 }
