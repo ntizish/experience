@@ -118,3 +118,10 @@
   50% {transform: scale(0) scaleX(-1);}
   100% {transform: scale(1) scaleX(-1);}
 }
+
+@keyframes ladyBlackAppears {
+  0% {margin-left: 101%; transform: scale(1);}
+  33% {margin-left: 74%; transform: scale(1);}
+  66% {margin-left: 74%; transform: scale(1);}
+  99% {margin-left: 74%; transform: scale(0);}
+}

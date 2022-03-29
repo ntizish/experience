@@ -241,6 +241,9 @@ body {
   margin-top: 10%;
   margin-left: 72%;
   z-index: 6;
+  animation: ladySpeak 1s;
+  animation-iteration-count: 3;
+  animation-play-state: paused;
 }
 
 #solariumImg {
@@ -540,11 +543,12 @@ body {
   width: 40vw;
 }
 
-.endOfGame {
-  /* position: fixed; */
+#endOfGame {
+  position: fixed;
   display: none;
   overflow: hidden;
   width: 100vw;
+  height: 100vh;
 }
 
 .before {
@@ -734,4 +738,18 @@ body {
 
 .wallTriangular:hover {
   animation-play-state: paused;
+}
+
+#ladyBlack {
+  width: 12vw;
+  position: absolute;
+  margin-left: 101%;
+  margin-top: 18%;
+  z-index: 6;
+  animation: ladyBlackAppears 3s ease-in;
+  animation-play-state: paused;
+}
+
+#ladyBlackImg {
+  width: 12vw;
 }

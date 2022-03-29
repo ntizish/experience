@@ -355,6 +355,32 @@ function tanning() {
     $("#interfaceSect").css("animation-play-state", "paused");
       $("#interfaceSect").css("display", "none");
   }, 500);
+  setTimeout(function() {
+    $("#ladyBlack").css("animation-play-state", "running");
+  }, 400);
+  setTimeout(function() {
+    $("#ladyBlack").css("animation-play-state", "paused");
+    $("#ladyBlack").css("display", "none");
+    setTimeout(function() {
+      $("#solarium").css("animation-play-state", "running");
+      setTimeout(function() {
+        $("#solarium").css("animation-play-state", "paused");
+        finish();
+      }, 2999);
+    }, 400);
+  }, 3350);
+}
+//function initiating last section of the landing
+function finish() {
+  $("#tanningRoom").css("animation", "sectionGo 500ms");
+  $("#endOfGame").css("animation", "sectionCome 500ms");
+  $("#tanningRoom").css("animation-play-state", "running");
+  $("#endOfGame").css("animation-play-state", "running");
+  $("#endOfGame").css("display", "block");
+  setTimeout(function() {
+    $("#tanningRoom").css("animation-play-state", "paused");
+    $("#tanningRoom").css("display", "none");
+  }, 500);
 }
 
 $(document).ready(function(){
