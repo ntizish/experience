@@ -68,8 +68,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#bulbImg").click(function(){
-    $("#tanningRoom").css("display", "none");
-    $(".nightRoom").css("display", "flex");
+    // $("#tanningRoom").css("display", "none");
+    $(".nightRoom").css("display", "block");
     setTimeout(function() {
       $("#tanningRoom").css("display", "flex");
       $(".nightRoom").css("display", "none");
