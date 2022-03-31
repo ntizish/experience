@@ -54,6 +54,12 @@
   100% {margin-top: 50%}
 }
 
+@keyframes houseJumpAdapt896 {
+  0% {margin-top: 27%}
+  50% {margin-top: 25%}
+  100% {margin-top: 27%}
+}
+
 @keyframes sectionGo {
   0% {left: 0%; top: 0%;}
   100% {left: -100%; top: 0%;}

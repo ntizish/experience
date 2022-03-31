@@ -168,18 +168,135 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* iPad Landscape */
+@media only screen and (min-device-width: 400px) and (max-device-width: 440px) and (orientation: portrait) {
+  /* iPhone 1 */
+  .rotatePlz {
+    display: block;
+  }
+
+  .rotateBeg {
+    width: 56vw;
+    margin-left: 23%;
+    margin-top: 80%;
+    position: absolute;
+  }
+
+  .rotateLight1 {
+    width: 68vw;
+    margin-left: 17%;
+    margin-top: 72%;
+  }
+
+  .rotateLight2 {
+    width: 68vw;
+    margin-left: 17%;
+    margin-top: 72%;
+  }
 }
 
+@media only screen and (min-device-width: 890px) and (max-device-width: 900px) {
+  /* iPhone 1 (same but rotated) */
+  .openingCity {
+    margin-top: 20%;
+  }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  /* iPhone Portrait */
+  #sun {
+    margin-top: 5%;
+  }
+
+  #house {
+    margin-top: 27%;
+    animation: houseJumpAdapt896 1s ease-out infinite;
+    animation-play-state: paused;
+  }
+
+  #openingText {
+    margin-top: 31%;
+  }
+
+  #workerText {
+    margin-left: 45%;
+    margin-top: 34%;
+  }
+
+  #octopusText {
+    margin-left: 17%;
+    margin-top: 36%;
+  }
+
+  #chamelionText {
+    margin-left: 12%;
+    margin-top: 33%;
+  }
+
+  #triangles {
+    width: 20.5vw;
+    margin-top: 19%;
+    margin-left: 60.7%;
+  }
+
+  #tanButton {
+    width: 2vw;
+    margin-left: 70.5%;
+    margin-top: 23%;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
-  /* iPhone Landscape */
+  #tanButtonImg {
+      width: 2vw;
+    }
+
+  .interfaceMac {
+    margin-top: 4%;
+  }
+
+  #afterRed {
+    width: 34vw;
+    margin-left: 66%;
+  }
+
+  #afterRed, #afterBrown, #afterYellow, #afterGreen, #afterGreen {
+    width: 34vw;
+    margin-left: 66%;
+  }
+
+  #afterImg {
+    width: 34vw;
+  }
+
+  #before {
+    width: 34vw;
+  }
+
+  .beforeImg {
+    width: 34vw;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  /* iPhone Portrait */
+  #endText {
+    margin-left: 40%;
+    margin-top: 34%;
+  }
+}
+
+@media only screen and (min-device-width: 340px) and (max-device-width: 380px) and (orientation: portrait) {
+  /* iPhone 2  */
+  .rotatePlz {
+    display: block;
+  }
+
+  .rotateBeg {
+    margin-top: 70%;
+  }
+
+  .rotateLight1 {
+    margin-top: 62%;
+  }
+
+  .rotateLight2 {
+    margin-top: 62%;
+  }
+
+  #triangles {
+    width: 21.5vw;
+    margin-left: 60.5%;
+}
+}
