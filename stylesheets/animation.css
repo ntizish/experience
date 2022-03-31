@@ -48,6 +48,12 @@
   100% {margin-top: 32%}
 }
 
+@keyframes houseJumpAdapt1024 {
+  0% {margin-top: 50%}
+  50% {margin-top: 48%}
+  100% {margin-top: 50%}
+}
+
 @keyframes sectionGo {
   0% {left: 0%; top: 0%;}
   100% {left: -100%; top: 0%;}
@@ -124,4 +130,12 @@
   33% {margin-left: 74%; transform: scale(1);}
   66% {margin-left: 74%; transform: scale(1);}
   99% {margin-left: 74%; transform: scale(0);}
+}
+
+@keyframes lightBlink {
+  0% {opacity: 0;}
+  49% {opacity: 0;}
+  50% {opacity: 1;}
+  99% {opacity: 1;}
+  100% {opacity: 0;}
 }

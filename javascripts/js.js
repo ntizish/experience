@@ -381,6 +381,9 @@ function finish() {
     $("#tanningRoom").css("animation-play-state", "paused");
     $("#tanningRoom").css("display", "none");
   }, 500);
+  var capitalisedColor = chosenT.charAt(0).toUpperCase() + chosenT.slice(1);
+  var neededClass = "#after" + capitalisedColor;
+  $(neededClass).css("display", "block");
 }
 
 $(document).ready(function(){

@@ -2,12 +2,170 @@
   /* Desktop */
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* iPad */
+@media only screen and (min-device-width: 1400px) and (max-device-width: 1450px) {
+  /* Desktop2 */
+  .openingCity {display: none;}
+  .openingCity2 {display: block;}
+  #workerText { margin-top: 50%;}
+  #octopusText {
+    margin-left: 59%;
+    margin-top: 50%;
+  }
+  #chamelionText {
+    margin-left: 42%;
+    margin-top: 44%;
+  }
+  #solariumTextImg {
+    margin-left: 30%;
+    margin-top: 43%;
+  }
+  #sunEyesTextImg {
+    margin-left: 46%;
+    margin-top: 47%;
+  }
+  .nightText {
+    margin-left: 32%;
+    margin-top: 40%;
+  }
+  .interfaceMac {
+    margin-top: 17%;
+    margin-left: 53%;
+  }
+  #triangles {
+    margin-top: 32%;
+    margin-left: 62.5%;
+  }
+  #tanButton {
+    margin-left: 70.5%;
+    margin-top: 36%;
+  }
+  #endText {
+    margin-top: 47%;
+}
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 1350px) and (max-device-width: 1380px) {
+  /* Desktop3 */
+  #triangles {
+    width: 19.5vw;
+    margin-left: 61.5%;
+}
+}
+
+
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1040px) {
+  /* Desktop4 */
+  .openingGrid { display: none;}
+  .openingGrid2 {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    display: block;
+    z-index: 1;
+    margin-top: -1.4%;
+  }
+  .openingCity {
+    margin-top: 43%;
+  }
+  #openingText {
+    margin-top: 58%;
+  }
+  .openingCity {
+    margin-top: 43%;
+  }
+  #sun {
+    margin-top: 30%;
+  }
+
+  #house {
+    margin-top: 50%;
+    animation: houseJumpAdapt1024 1s ease-out infinite;
+    animation-play-state: paused;
+  }
+
+  #houseButton { margin-top: 50%;}
+
+  #workerText {
+    margin-left: 30%;
+    margin-top: 56%;
+}
+#reception {
+    width: 100vw;
+    height: 100vh;
+    background-color: #C4C4C4;
+}
+
+#tanningRoom {
+    width: 100vw;
+    height: 100vh;
+    background-color: #C4C4C4;
+}
+
+#sunEyesTextImg {
+    margin-top: 59%;
+    margin-left: 54%;
+}
+
+#solariumTextImg {
+    margin-top: 54%;
+    margin-left: 32%;
+}
+
+#octopusText {
+    margin-left: 52%;
+    margin-top: 56%;
+}
+
+#chamelionText {
+    margin-left: 37%;
+    margin-top: 57%;
+}
+
+#triangles {
+    width: 19.5vw;
+    margin-left: 58.5%;
+    margin-top: 37%;
+}
+
+.interfaceMac {
+    width: 60vw;
+    margin-top: 18%;
+    margin-left: 45%;
+}
+
+.interfaceMacImg {
+    width: 60vw;
+}
+
+#tanningText {
+    margin-top: 15%;
+}
+
+#tanButton {
+    width: 2.8vw;
+    margin-left: 66.5%;
+    margin-top: 41%;
+}
+
+#tanButtonImg {
+    width: 2.8vw;
+}
+
+#endText {
+    margin-left: 33%;
+    margin-top: 49%;
+}
+#endOfGame {
+    padding-top: 8vw;
+}
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (orientation: portrait) {
   /* iPad Portrait */
+  .rotatePlz {
+    display: block;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -25,4 +183,3 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   /* iPhone Portrait */
-  

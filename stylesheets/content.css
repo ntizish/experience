@@ -17,11 +17,24 @@ body {
   z-index: 1;
 }
 
+.openingGrid2 {
+  display: none;
+}
+
 .openingCity {
   width: 100%;
   position: absolute;
   margin-top: 25%;
   z-index: 3;
+  display: block;
+}
+
+.openingCity2 {
+  width: 100%;
+  position: absolute;
+  margin-top: 25%;
+  z-index: 3;
+  display: none;
 }
 
 #sun {
@@ -564,7 +577,34 @@ body {
   width: 40vw;
 }
 
-.after {
+#afterGreen {
+  width: 43vw;
+  display: none;
+  margin-left: 57%;
+  margin-top: 4%;
+  position: absolute;
+  animation: after 3s ease-in-out infinite;
+}
+
+#afterYellow {
+  width: 43vw;
+  display: none;
+  margin-left: 57%;
+  margin-top: 4%;
+  position: absolute;
+  animation: after 3s ease-in-out infinite;
+}
+
+#afterBrown {
+  width: 43vw;
+  display: none;
+  margin-left: 57%;
+  margin-top: 4%;
+  position: absolute;
+  animation: after 3s ease-in-out infinite;
+}
+
+#afterRed {
   width: 43vw;
   margin-left: 57%;
   margin-top: 4%;
@@ -572,7 +612,16 @@ body {
   animation: after 3s ease-in-out infinite;
 }
 
-.afterImg {
+#afterPurple {
+  width: 43vw;
+  display: none;
+  margin-left: 57%;
+  margin-top: 4%;
+  position: absolute;
+  animation: after 3s ease-in-out infinite;
+}
+
+#afterImg {
   width: 43vw;
 }
 
@@ -620,6 +669,10 @@ body {
   margin-top: 38%;
   z-index: 4;
   display: none;
+}
+
+#chamelionTextImg {
+  width: 35vw;
 }
 
 #chamelionText {
@@ -753,4 +806,42 @@ body {
 
 #ladyBlackImg {
   width: 12vw;
+}
+
+.rotatePlz {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 10;
+  position: fixed;
+  display: none;
+}
+
+.rotateBegImg {
+  width: 56vw;
+}
+
+.rotateBeg {
+  width: 56vw;
+  margin-left: 20%;
+  margin-top: 50%;
+  position: absolute;
+}
+
+.rotateLight1 {
+  width: 68vw;
+  margin-left: 14%;
+  margin-top: 42%;
+  position: absolute;
+  z-index: 1;
+}
+
+.rotateLight2 {
+  width: 68vw;
+  margin-left: 14%;
+  margin-top: 42%;
+  position: absolute;
+  opacity: 0;
+  animation: lightBlink 1.5s linear infinite;
+  z-index: 2;
 }
